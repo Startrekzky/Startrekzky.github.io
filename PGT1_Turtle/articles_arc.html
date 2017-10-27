@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>ARC - PaulGraham</title>
+        <meta name="keywords" content="PaulGraham, Lisp, Spam, Arc, YCombinator">
+        <meta name="description" content="PaulGraham personal website">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/layout_config.js" type="text/javascript"></script>
+        <script src="js/twitter_widget.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="PG Logo"></a> 
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html" class="selected">Articles</a>
+                                <ul id="article_list">
+                                    <li><a href="articles_arc.html">&nbsp;&nbsp;Arc</a></li>
+                                    <li><a href="articles_lisp.html">&nbsp;&nbsp;Lisp</a></li>
+                                    <li><a href="articles_spam.html">&nbsp;&nbsp;Spam</a></li>
+                                    <li><a href="articles_responses.html">&nbsp;&nbsp;Responses</a></li>
+                                    <li><a href="articles_others.html">&nbsp;&nbsp;Other Essays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="books.html">Books</a>
+                                <ul id="book_list">
+                                    <li><a href="books_01.html">&nbsp;&nbsp;Hackers &amp; Painters</a></li>
+                                    <li><a href="books_02.html">&nbsp;&nbsp;ANSI Common Lisp</a></li>
+                                    <li><a href="books_03.html">&nbsp;&nbsp;On Lisp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq_general.html">Questions</a>
+                                <ul id="question_list">
+                                    <li><a href="faq_general.html">&nbsp;&nbsp;FAQs</a></li>
+                                    <li><a href="raq.html">&nbsp;&nbsp;RAQs</a></li>
+                                    <li><a href="ask.html">&nbsp;&nbsp;Ask Me</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                        </ul>
+                        <form id="minisearch" action="javascript:window.location.href='search_result.html'; return false;" method="post" autocomplete="off">
+                            <input type="image" id="minisubmit" src="images/search.png"  onclick="javascript:window.location.href='search_result.html'; return false;"/>
+                            <label for="minibar">Search a keyword: </label>
+                            <input type="minibar" id="minibar" name="minibar" placeholder="Search"/>  
+                        </form>  
+                        <div id="clearfloat"></div>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">                <!--main section-->
+                    <div id="threecolwrap">     <!--wrap all 3 columns-->
+                        <div id="twocolwrap">   <!--wrap left and main column to locate right column-->
+                            <div id="column_left">
+                                <ul id="sidenav">
+                                    <li class="mainsection"><a href="articles.html">&nbsp;Articles</a></li>
+                                    <li class="subsection"><a href="articles_arc.html" class="selected">&nbsp;Arc</a></li>
+                                    <li class="subsection"><a href="articles_lisp.html">&nbsp;Lisp</a></li>
+                                    <li class="subsection"><a href="articles_spam.html">&nbsp;Spam</a></li> 
+                                    <li class="subsection"><a href="articles_responses.html">&nbsp;Responses</a></li> 
+                                    <li class="subsection"><a href="articles_others.html">&nbsp;Other Essays</a></li> 
+                                </ul>
+                            </div>
+                            <div id="column_main">
+                                <section id="site_location">
+                                    <a href="index.html">PG</a> > <a href="articles.html">Articles</a> > ARC
+                                </section>
+                                <h1>ARC</h1>
+                                <div class="section_intro">
+                                    <p>Arc is a new dialect of Lisp we're working on. You can find an early release and ask questions at <a href="http://arclanguage.org/">arclanguage.org</a>. The Arc community is very newbie-friendly, because all the users are newbies to some extent.</p>
+                                    <p>Useful links:</p>
+                                    <ul>
+                                        <li><a href="http://arclanguage.org/forum">Forum</a></li>
+                                        <li><a href="http://ycombinator.com/arc/tut.txt">Tutorial</a></li>
+                                        <li><a href="http://arclanguage.org/install">Get Arc</a></li>
+                                        <li><a href="faq_arc.html">Arc FAQ</a></li>
+                                    </ul>
+                                </div>
+                                <a class="article_pre" href="articles_arc_001.html">
+                                    <article class="passage">
+                                        <h3>ARC's Out</h3>
+                                        <h6>29 January 2008</h6>
+                                        <p>We're releasing a version of Arc today, along with a site about it at arclanguage.org. This site will seem very familiar to users of Hacker News. It's mostly the same code, with a few colors and messages changed.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_002.html">
+                                    <article class="passage">
+                                        <h3>Take the ARC Challenge</h3>
+                                        <h6>February 2008</h6>
+                                        <p>Arc's been out for a few days now. Everyone seems to have an opinion about it. The low end are much the same as the low end of opinions about anything online. There's no high end yet, because no one has had enough time yet to be able to speak from experience about what it's like to program in Arc. Those are the responses I'm really interested in. But in the meantime, we have the medium-level responses: the opinions of people who have some understanding of the issues involved, but who are writing based on first impressions.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_003.html">
+                                    <article class="passage">
+                                        <h3>First Priority: Core Language </h3>
+                                        <h6>February 2008</h6>
+                                        <p>My first priority with Arc right now is the core language—those operators that are neither primitives like car and cdr, nor special-purpose library functions. I mean operators like CL's mapcar, let, remove-if-not, and so on.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_004.html">
+                                    <article class="passage">
+                                        <h2>Help Us Design ARC</h2>
+                                        <p>We often get mail saying: <em>you should take a look at Language X; it has some really cool features.</em></p>
+                                        <p>We're ready to embrace (and extend) any great new ideas that are out there, but there are just too many languages for us to learn them all.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_005.html">
+                                    <article class="passage">
+                                        <h2>Design Philosophy  </h2>
+                                        <p>We've been criticized for designing Arc as a language for good programmers. Good design<!--http://www.paulgraham.com/taste.html-->, the argument goes, means understanding the needs of your users, and most programmers are not good programmers.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_006.html">
+                                    <article class="passage">
+                                        <h2>Why ARC isn't Especially Object-Oriented</h2>
+                                        <p>There is a kind of mania for object-oriented programming at the moment, but some of the smartest programmers I know are some of the least excited about it.</p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                                <a class="article_pre" href="articles_arc_007.html">
+                                    <article class="passage">
+                                        <h2>MICHAEL VANIER: LPM and LFSP</h2>
+                                        <p><em>(This is from an email sent by Mike Vanier. It is such a well-written description of the problems hackers face that I thought everyone should see it.)</em></p>
+                                        <p class="more">...</p>
+                                        <div id="clearfloat"></div>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="column_right">
+                            <div id="profile">
+                                <a href="biography.html"><img src="images/pg_profile.jpg" alt="Paul Graham Photo"></a>
+                                <h1>Paul Graham</h1>
+                                <div id="clearfloat"></div>
+                                <p>Programmer, writer, and investor</p>
+                            </div>
+                            <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/paulg" data-widget-id="595850039504838656">Tweets by @paulg</a>       <!--twitter widget-->
+                            </div>
+                            <div id="link">
+                                <a href="http://www.ycombinator.com/"><img src="images/YC.png" alt="YCombinator link picture"></a>
+                                <a href="http://www.startupschool.org/"><img src="images/startup.png" alt="Startup School link picture"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clearfloat"></div>
+            </div>
+
+            <footer>
+                <div id="clearfloat"></div>
+                <div id="footer_left">
+                    <p>Twitter: <a href="http://twitter.com/paulg">@paulg</a></p>
+                    <p>E-mail: paulgraham@ycombinator.com</p> 
+                </div>
+                <div id="footer_right">
+                    <p>© 2015 mmxv pg</p>
+                    <p>Website Last Update: 12-06-2015</p>
+                </div>                
+            </footer>
+        </div>
+    </body>
+</html>

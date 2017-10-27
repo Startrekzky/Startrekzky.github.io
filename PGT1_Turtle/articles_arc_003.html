@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>First Priority: Core Language - PaulGraham</title>
+        <meta name="keywords" content="PaulGraham, Lisp, Spam, Arc, YCombinator">
+        <meta name="description" content="PaulGraham personal website">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/layout_config.js" type="text/javascript"></script>
+        <script src="js/twitter_widget.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="PG Logo"></a> 
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html" class="selected">Articles</a>
+                                <ul id="article_list">
+                                    <li><a href="articles_arc.html">&nbsp;&nbsp;Arc</a></li>
+                                    <li><a href="articles_lisp.html">&nbsp;&nbsp;Lisp</a></li>
+                                    <li><a href="articles_spam.html">&nbsp;&nbsp;Spam</a></li>
+                                    <li><a href="articles_responses.html">&nbsp;&nbsp;Responses</a></li>
+                                    <li><a href="articles_others.html">&nbsp;&nbsp;Other Essays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="books.html">Books</a>
+                                <ul id="book_list">
+                                    <li><a href="books_01.html">&nbsp;&nbsp;Hackers &amp; Painters</a></li>
+                                    <li><a href="books_02.html">&nbsp;&nbsp;ANSI Common Lisp</a></li>
+                                    <li><a href="books_03.html">&nbsp;&nbsp;On Lisp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq_general.html">Questions</a>
+                                <ul id="question_list">
+                                    <li><a href="faq_general.html">&nbsp;&nbsp;FAQs</a></li>
+                                    <li><a href="raq.html">&nbsp;&nbsp;RAQs</a></li>
+                                    <li><a href="ask.html">&nbsp;&nbsp;Ask Me</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                        </ul>
+                        <form id="minisearch" action="javascript:window.location.href='search_result.html'; return false;" method="post" autocomplete="off">
+                            <input type="image" id="minisubmit" src="images/search.png"  onclick="javascript:window.location.href='search_result.html'; return false;"/>
+                            <label for="minibar">Search a keyword: </label>
+                            <input type="minibar" id="minibar" name="minibar" placeholder="Search"/>  
+                        </form>  
+                        <div id="clearfloat"></div>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">                <!--main section-->
+                    <div id="threecolwrap">     <!--wrap all 3 columns-->
+                        <div id="twocolwrap">   <!--wrap left and main column to locate right column-->
+                            <div id="column_left">
+                                <ul id="sidenav">
+                                    <li class="mainsection"><a href="articles.html">&nbsp;Articles</a></li>
+                                    <li class="subsection"><a href="articles_arc.html" class="selected">&nbsp;Arc</a></li>
+                                    <li class="subsection"><a href="articles_lisp.html">&nbsp;Lisp</a></li>
+                                    <li class="subsection"><a href="articles_spam.html">&nbsp;Spam</a></li> 
+                                    <li class="subsection"><a href="articles_responses.html">&nbsp;Responses</a></li> 
+                                    <li class="subsection"><a href="articles_others.html">&nbsp;Other Essays</a></li> 
+                                </ul>
+                            </div>
+                            <div id="column_main">
+                                <section id="site_location">
+                                    <a href="index.html">PG</a> > <a href="articles.html">Articles</a> > <a href="articles_arc.html">ARC</a> > Article Details
+                                </section>
+                                <article class="passage">	
+                                    <h3>First Priority: Core Language </h3>
+                                    <h6>February 2008</h6>
+                                    <p>My first priority with Arc right now is the core language—those operators that are neither primitives like car and cdr, nor special-purpose library functions. I mean operators like CL's mapcar, let, remove-if-not, and so on.</p>
+                                <p>As I said in the <a href="articles_arc_002.html">Arc Challenge</a>, there has to be at least one optimal path up from axioms to a complete language for everyday programming, and the goal of Arc is to try to discover one.</p>
+                                    <p>I'm not against changing the axioms. If it's possible to do that in a useful way, so much the better. But that is not the kind of idea one has every day.</p>
+                                    <p>The reason I'm focusing on the region between axioms and libraries is that, from the programmer's point of view, these operators are the language. These are what your programs are made of. If Lisp were a house, these operators would be the front door, the living room sofa, the kitchen table. Small variations in their design can greatly affect how well the language works.</p>
+                                    <p>I've taken a lot of heat for focusing on this, but I think it's both an important problem and a difficult one. One sign of its difficulty is that although Lisp is almost 50 years old, the core operators in all the Lisp dialects I know are so far from optimal. The cond macro, for example. It had all those gratuitous parentheses in it since Lisp 1, and no one did anything about it. I wouldn't be surprised if someone had already discovered the Arc trick of collapsing if and cond into one operator, but it was certainly not common knowledge. I was pleased when I realized it could be done.</p>
+                                    <p>One reason Lisp cores evolve so slowly is that we get used to them. You start to think in the operators that already exist. It takes a conscious effort to imagine how your code might be rewritten using operators that don't.</p>
+                                    <p>That's part of why I focus on code size. Length is an external constraint. If you start looking at code thinking "what is the lower bound on how long this has to be?" you're one step from discovering the new operator that will make it that short.</p>
+                                    <p>The other reason Lisp cores have evolved so slowly is that it's a design problem more than an implementation problem, and most hackers have neither the ability nor the inclination to work on that sort of thing. It won't impress your hacker pals; it won't get you tenure; instead of pumping out 500 lines of code a day, you consider yourself lucky if you write -20. But it's not a frivolous thing to work on. Indeed, I think one of the reasons Lisp has persisted so long is that McCarthy was a great designer. At a time when other people were creating languages compromised by the hardware of the day or by ill-considered attempts to make programming languages like natural languages, he made something tiny and timeless. A lot of what's good about Lisp is that brilliance, showing up through the murk of successive less talented designers.</p>
+                                    <p>Some of the people who flamed Arc on its initial release joked about it as "the second coming of McCarthy." I'm sure they didn't mean it this way, but in fact I do want to restart the kind of language design he was doing at the point where he left off.
+                                    </p>
+                                    <p>So I want to ask a favor from Arc users: I want to ask for tolerance when I break and change things in what may seem to be arbitrary, small ways. I consider the whole core to be written in pencil at this point, and I hope to be able to change it a lot. This will make Arc a pain in the ass to write programs on top of, I know, but the end result should be something worth having.</p>
+                                    <p>While Arc includes some handy libraries for writing web apps—libraries so powerful, apparently, that it's cheating to compare Arc to other languages using a problem that requires saving a string on the server—that is not the focus right now. I only wrote all the web stuff to create the pressure of real applications pushing down on the core. So while I'm interested in new ideas for web apps, the kind of ideas I'd really like to hear about are new things to do in the language core.</p>
+                                    <p>It's harder to think of new ideas down in this highly compressed and thoroughly picked over territory, but it's very rewarding work. And we know what we're looking for must exist. By definition, there is some optimal path from axioms up to a complete language. The Platonic form of Lisp is somewhere inside the block of marble. All we have to do is chip away till we get at it.</p>
+                                </article>
+                                <section id="previous_article">
+                                    <p><a href="articles_arc_002.html">&laquo; PREV: Take the Arc Challenge</a></p>
+                                </section>               
+                                <section id="next_article">
+                                    <p><a href="articles_arc_004.html">NEXT: Help Us Design ARC &raquo;</a></p>
+                                </section>  
+                                <div id="clearfloat"></div>
+                            </div>
+                        </div>
+                        <div id="column_right">
+                            <div id="profile">
+                                <a href="biography.html"><img src="images/pg_profile.jpg" alt="Paul Graham Photo"></a>
+                                <h1>Paul Graham</h1>
+                                <div id="clearfloat"></div>
+                                <p>Programmer, writer, and investor</p>
+                            </div>
+                            <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/paulg" data-widget-id="595850039504838656">Tweets by @paulg</a>       <!--twitter widget-->
+                            </div>
+                            <div id="link">
+                                <a href="http://www.ycombinator.com/"><img src="images/YC.png" alt="YCombinator link picture"></a>
+                                <a href="http://www.startupschool.org/"><img src="images/startup.png" alt="Startup School link picture"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clearfloat"></div>
+            </div>
+
+            <footer>
+                <div id="clearfloat"></div>
+                <div id="footer_left">
+                    <p>Twitter: <a href="http://twitter.com/paulg">@paulg</a></p>
+                    <p>E-mail: paulgraham@ycombinator.com</p> 
+                </div>
+                <div id="footer_right">
+                    <p>© 2015 mmxv pg</p>
+                    <p>Website Last Update: 12-06-2015</p>
+                </div>                
+            </footer>
+        </div>
+    </body>
+</html>

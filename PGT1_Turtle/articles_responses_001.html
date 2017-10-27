@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Founders' Accents - PaulGraham</title>
+        <meta name="keywords" content="PaulGraham, Lisp, Spam, Arc, YCombinator">
+        <meta name="description" content="PaulGraham personal website">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/layout_config.js" type="text/javascript"></script>
+        <script src="js/twitter_widget.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="PG Logo"></a> 
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html" class="selected">Articles</a>
+                                <ul id="article_list">
+                                    <li><a href="articles_arc.html">&nbsp;&nbsp;Arc</a></li>
+                                    <li><a href="articles_lisp.html">&nbsp;&nbsp;Lisp</a></li>
+                                    <li><a href="articles_spam.html">&nbsp;&nbsp;Spam</a></li>
+                                    <li><a href="articles_responses.html">&nbsp;&nbsp;Responses</a></li>
+                                    <li><a href="articles_others.html">&nbsp;&nbsp;Other Essays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="books.html">Books</a>
+                                <ul id="book_list">
+                                    <li><a href="books_01.html">&nbsp;&nbsp;Hackers &amp; Painters</a></li>
+                                    <li><a href="books_02.html">&nbsp;&nbsp;ANSI Common Lisp</a></li>
+                                    <li><a href="books_03.html">&nbsp;&nbsp;On Lisp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq_general.html">Questions</a>
+                                <ul id="question_list">
+                                    <li><a href="faq_general.html">&nbsp;&nbsp;FAQs</a></li>
+                                    <li><a href="raq.html">&nbsp;&nbsp;RAQs</a></li>
+                                    <li><a href="ask.html">&nbsp;&nbsp;Ask Me</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                        </ul>
+                        <form id="minisearch" action="javascript:window.location.href='search_result.html'; return false;" method="post" autocomplete="off">
+                            <input type="image" id="minisubmit" src="images/search.png"  onclick="javascript:window.location.href='search_result.html'; return false;"/>
+                            <label for="minibar">Search a keyword: </label>
+                            <input type="minibar" id="minibar" name="minibar" placeholder="Search"/>  
+                        </form>  
+                        <div id="clearfloat"></div>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">                <!--main section-->
+                    <div id="threecolwrap">     <!--wrap all 3 columns-->
+                        <div id="twocolwrap">   <!--wrap left and main column to locate right column-->
+                            <div id="column_left">
+                                <ul id="sidenav">
+                                    <li class="mainsection"><a href="articles.html">&nbsp;Articles</a></li>
+                                    <li class="subsection"><a href="articles_arc.html">&nbsp;Arc</a></li>
+                                    <li class="subsection"><a href="articles_lisp.html">&nbsp;Lisp</a></li>
+                                    <li class="subsection"><a href="articles_spam.html">&nbsp;Spam</a></li> 
+                                    <li class="subsection"><a href="articles_responses.html" class="selected">&nbsp;Responses</a></li> 
+                                    <li class="subsection"><a href="articles_others.html">&nbsp;Other Essays</a></li> 
+                                </ul>
+                            </div>
+                            <div id="column_main">
+                                <section id="site_location">
+                                    <a href="index.html">PG</a> > <a href="articles.html">Articles</a> > <a href="articles_responses.html">Responses</a> > Article Details
+                                </section>
+                                <article class="passage">	
+                                    <h3>Founders' Accents</h3>
+                                    <h6>August 2013</h6>
+                                    <p>Recently Inc published an <a href="http://www.inc.com/magazine/201309/issie-lapowsky/how-paul-graham-became-successful.html">interview</a> in which I said we'd noticed a correlation between founders having very strong foreign accents and their companies doing badly.</p>
+                                    <p>Some interpreted this statement as xenophobic, or even racist—as if I'd said that having a foreign accent at all was a problem.</p>
+                                    <p>But that's not what I said, or what I think. No one in Silicon Valley would think that. A lot of the most successful founders here speak with accents.</p>
+                                    <p>I'd already explained that when I talked about this issue with a New York Times <a href="http://www.nytimes.com/2013/05/05/magazine/y-combinator-silicon-valleys-start-up-machine.html?pagewanted=all&_r=0">reporter</a>:</p>
+                                    <blockquote><p><em>But after ranking every Y.C. company by its valuation, Graham discovered a more significant correlation. "You have to go far down the list to find a C.E.O. with a strong foreign accent," Graham told me. "Alarmingly far down—like 100th place." I asked him to clarify. "You can sound like you're from Russia," he said, in the voice of an evil Soviet henchman. "It's just fine, as long as everyone can understand you."</em></p></blockquote>
+                                    <p>Everyone got that? We all agree accents are fine? The problem is when people can't understand you.</p>
+                                    <p>We have a lot of empirical evidence that there's a threshold beyond which the difficulty of understanding the CEO harms a company's prospects. And while we don't know exactly how, I'm pretty sure the problem is not merely that investors have trouble understanding the company's Demo Day presentation. Demo Day presentations are only 2 minutes and 30 seconds. With a presentation that short, you can just memorize it at the level of individual phonemes. Most batches we have groups that do this.</p>
+                                    <p>Conversations are more of a problem, as I know from my own experience doing <a href="http://www.ycombinator.com/atyc/">office hours</a>. We talk about a lot of subtle points at office hours. (Even talking on the phone rather than in person introduces a significant degradation. That's why we insist the groups we fund move to Silicon Valley for the duration of YC.) And I know I don't get as deeply into things with the groups that don't speak English well. I can feel it happening; we just can't communicate well enough. And often when I feel it happening, I warn the founders, because most of the people they encounter are not going to work as hard to understand them as I do.</p>
+                                    <p>A startup founder is always selling. Not just literally to customers, but to current and potential employees, partners, investors, and the press as well. Since the best startup ideas are by their nature perilously close to bad ideas, there is little room for misunderstanding. And yet a lot of the people you encounter as a founder will initially be indifferent, if not skeptical. They don't know yet that you're going to be huge. You're just one person they're meeting that day. They're not going to work to understand you. So you can't make it be work to understand you.</p>
+                                    <p>I'd thought of just letting this controversy blow over. But then I remembered why I said what I said in the interview in the first place: to help founders. (I said so in the interview, though that got cut from the published version.) There's an important message here that I want to get through to founders, and the danger of people misrepresenting what I said is not just that founders get the parody version, but that the original message is lost.</p>
+                                    <p>I was talking a few years ago to a woman from some sort of entrepreneurship program in Central Europe. She asked me what they could do to prepare people to apply to Y Combinator. I think she was hoping I would tell her how she could teach them about startups, but as I've written elsewhere, the way to learn about startups is to start one. I told her the most important thing she could do was to make sure they spoke English well. I don't mind people beating on me so long as I can get that message through to founders who want to come to Silicon Valley from other countries. It's fine to have an accent, but you must be able to make yourself understood.</p><br/>
+                                    <p><strong>Thanks</strong> to Sam Altman, Kevin Hale, Carolynn Levy, Jessica Livingston, Geoff Ralston, and Garry Tan for reading drafts of this.</p>                                    
+                                </article>                                
+                                <section id="next_article">
+                                    <p><a href="articles_responses_002.html">NEXT: What I Didn't Say &raquo;</a></p>
+                                </section>  
+                                <div id="clearfloat"></div>
+                            </div>
+                        </div>
+                        <div id="column_right">
+                            <div id="profile">
+                                <a href="biography.html"><img src="images/pg_profile.jpg" alt="Paul Graham Photo"></a>
+                                <h1>Paul Graham</h1>
+                                <div id="clearfloat"></div>
+                                <p>Programmer, writer, and investor</p>
+                            </div>
+                            <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/paulg" data-widget-id="595850039504838656">Tweets by @paulg</a>       <!--twitter widget-->
+                            </div>
+                            <div id="link">
+                                <a href="http://www.ycombinator.com/"><img src="images/YC.png" alt="YCombinator link picture"></a>
+                                <a href="http://www.startupschool.org/"><img src="images/startup.png" alt="Startup School link picture"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clearfloat"></div>
+            </div>
+
+            <footer>
+                <div id="clearfloat"></div>
+                <div id="footer_left">
+                    <p>Twitter: <a href="http://twitter.com/paulg">@paulg</a></p>
+                    <p>E-mail: paulgraham@ycombinator.com</p> 
+                </div>
+                <div id="footer_right">
+                    <p>© 2015 mmxv pg</p>
+                    <p>Website Last Update: 12-06-2015</p>
+                </div>                
+            </footer>
+        </div>
+    </body>
+</html>

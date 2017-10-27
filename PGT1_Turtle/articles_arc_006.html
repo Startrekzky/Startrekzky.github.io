@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Why Arc Isn't Especially Object-Oriented - PaulGraham</title>
+        <meta name="keywords" content="PaulGraham, Lisp, Spam, Arc, YCombinator">
+        <meta name="description" content="PaulGraham personal website">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/layout_config.js" type="text/javascript"></script>
+        <script src="js/twitter_widget.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="PG Logo"></a> 
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html" class="selected">Articles</a>
+                                <ul id="article_list">
+                                    <li><a href="articles_arc.html">&nbsp;&nbsp;Arc</a></li>
+                                    <li><a href="articles_lisp.html">&nbsp;&nbsp;Lisp</a></li>
+                                    <li><a href="articles_spam.html">&nbsp;&nbsp;Spam</a></li>
+                                    <li><a href="articles_responses.html">&nbsp;&nbsp;Responses</a></li>
+                                    <li><a href="articles_others.html">&nbsp;&nbsp;Other Essays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="books.html">Books</a>
+                                <ul id="book_list">
+                                    <li><a href="books_01.html">&nbsp;&nbsp;Hackers &amp; Painters</a></li>
+                                    <li><a href="books_02.html">&nbsp;&nbsp;ANSI Common Lisp</a></li>
+                                    <li><a href="books_03.html">&nbsp;&nbsp;On Lisp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq_general.html">Questions</a>
+                                <ul id="question_list">
+                                    <li><a href="faq_general.html">&nbsp;&nbsp;FAQs</a></li>
+                                    <li><a href="raq.html">&nbsp;&nbsp;RAQs</a></li>
+                                    <li><a href="ask.html">&nbsp;&nbsp;Ask Me</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                        </ul>
+                        <form id="minisearch" action="javascript:window.location.href='search_result.html'; return false;" method="post" autocomplete="off">
+                            <input type="image" id="minisubmit" src="images/search.png"  onclick="javascript:window.location.href='search_result.html'; return false;"/>
+                            <label for="minibar">Search a keyword: </label>
+                            <input type="minibar" id="minibar" name="minibar" placeholder="Search"/>  
+                        </form>  
+                        <div id="clearfloat"></div>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">                <!--main section-->
+                    <div id="threecolwrap">     <!--wrap all 3 columns-->
+                        <div id="twocolwrap">   <!--wrap left and main column to locate right column-->
+                            <div id="column_left">
+                                <ul id="sidenav">
+                                    <li class="mainsection"><a href="articles.html">&nbsp;Articles</a></li>
+                                    <li class="subsection"><a href="articles_arc.html" class="selected">&nbsp;Arc</a></li>
+                                    <li class="subsection"><a href="articles_lisp.html">&nbsp;Lisp</a></li>
+                                    <li class="subsection"><a href="articles_spam.html">&nbsp;Spam</a></li> 
+                                    <li class="subsection"><a href="articles_responses.html">&nbsp;Responses</a></li> 
+                                    <li class="subsection"><a href="articles_others.html">&nbsp;Other Essays</a></li> 
+                                </ul>
+                            </div>
+                            <div id="column_main">
+                                <section id="site_location">
+                                    <a href="index.html">PG</a> > <a href="articles.html">Articles</a> > <a href="articles_arc.html">ARC</a> > Article Details
+                                </section>
+                                <article class="passage">	
+                                    <h2>Why ARC isn't Especially Object-Oriented</h2>
+                                    <p>There is a kind of mania for object-oriented programming at the moment, but some of the smartest programmers I know are some of the least excited about it.</p>
+                                    <p>My own feeling is that object-oriented programming is a useful technique in some cases, but it isn't something that has to pervade every program you write. You should be able to define new types, but you shouldn't have to express every program as the definition of new types.</p>
+                                    <p>I think there are five reasons people like object-oriented programming, and three and a half of them are bad:</p>
+                                    <ul>
+                                        <li>1. Object-oriented programming is exciting if you have a statically-typed language without lexical closures or macros. To some degree, it offers a way around these limitations. (See Greenspun's Tenth Rule.)</li>
+                                        <li>2. Object-oriented programming is popular in big companies, because it suits the way they write software. At big companies, software tends to be written by large (and frequently changing) teams of mediocre programmers. Object-oriented programming imposes a discipline on these programmers that prevents any one of them from doing too much damage. The price is that the resulting code is bloated with protocols and full of duplication. This is not too high a price for big companies, because their software is probably going to be bloated and full of duplication anyway.</li>
+                                        <li>3. Object-oriented programming generates a lot of what looks like work. Back in the days of fanfold, there was a type of programmer who would only put five or ten lines of code on a page, preceded by twenty lines of elaborately formatted comments. Object-oriented programming is like crack for these people: it lets you incorporate all this scaffolding right into your source code. Something that a Lisp hacker might handle by pushing a symbol onto a list becomes a whole file of classes and methods. So it is a good tool if you want to convince yourself, or someone else, that you are doing a lot of work.</li>
+                                        <li>4. If a language is itself an object-oriented program, it can be extended by users. Well, maybe. Or maybe you can do even better by offering the sub-concepts of object-oriented programming a la carte.Overloading, for example, is not intrinsically tied to classes. We'll see.</li>
+                                        <li>5. Object-oriented abstractions map neatly onto the domains of certain specific kinds of programs, like simulations and CAD systems</li>
+                                    </ul>
+                                    <p>I personally have never needed object-oriented abstractions. Common Lisp has an enormously powerful object system and I've never used it once. I've done a lot of things (e.g. making hash tables full of closures) that would have required object-oriented techniques to do in wimpier languages, but I have never had to use CLOS.</p>
+                                    <p>Maybe I'm just stupid, or have worked on some limited subset of applications. There is a danger in designing a language based on one's own experience of programming. But it seems more dangerous to put stuff in that you've never needed because it's thought to be a good idea.</p>
+                                </article>
+                                <section id="previous_article">
+                                    <p><a href="articles_arc_005.html">&laquo; PREV: Design Philosophy</a></p>
+                                </section>               
+                                <section id="next_article">
+                                    <p><a href="articles_arc_007.html">NEXT: MICHAEL VANIER: LPM and LFSP &raquo;</a></p>
+                                </section>  
+                                <div id="clearfloat"></div>
+                            </div>
+                        </div>
+                        <div id="column_right">
+                            <div id="profile">
+                                <a href="biography.html"><img src="images/pg_profile.jpg" alt="Paul Graham Photo"></a>
+                                <h1>Paul Graham</h1>
+                                <div id="clearfloat"></div>
+                                <p>Programmer, writer, and investor</p>
+                            </div>
+                            <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/paulg" data-widget-id="595850039504838656">Tweets by @paulg</a>       <!--twitter widget-->
+                            </div>
+                            <div id="link">
+                                <a href="http://www.ycombinator.com/"><img src="images/YC.png" alt="YCombinator link picture"></a>
+                                <a href="http://www.startupschool.org/"><img src="images/startup.png" alt="Startup School link picture"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clearfloat"></div>
+            </div>
+
+            <footer>
+                <div id="clearfloat"></div>
+                <div id="footer_left">
+                    <p>Twitter: <a href="http://twitter.com/paulg">@paulg</a></p>
+                    <p>E-mail: paulgraham@ycombinator.com</p> 
+                </div>
+                <div id="footer_right">
+                    <p>© 2015 mmxv pg</p>
+                    <p>Website Last Update: 12-06-2015</p>
+                </div>                
+            </footer>
+        </div>
+    </body>
+</html>

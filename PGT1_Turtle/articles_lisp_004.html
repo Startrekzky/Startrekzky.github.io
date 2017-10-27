@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>The Roots of Lisp - PaulGraham</title>
+        <meta name="keywords" content="PaulGraham, Lisp, Spam, Arc, YCombinator">
+        <meta name="description" content="PaulGraham personal website">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/layout_config.js" type="text/javascript"></script>
+        <script src="js/twitter_widget.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="PG Logo"></a> 
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html" class="selected">Articles</a>
+                                <ul id="article_list">
+                                    <li><a href="articles_arc.html">&nbsp;&nbsp;Arc</a></li>
+                                    <li><a href="articles_lisp.html">&nbsp;&nbsp;Lisp</a></li>
+                                    <li><a href="articles_spam.html">&nbsp;&nbsp;Spam</a></li>
+                                    <li><a href="articles_responses.html">&nbsp;&nbsp;Responses</a></li>
+                                    <li><a href="articles_others.html">&nbsp;&nbsp;Other Essays</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="books.html">Books</a>
+                                <ul id="book_list">
+                                    <li><a href="books_01.html">&nbsp;&nbsp;Hackers &amp; Painters</a></li>
+                                    <li><a href="books_02.html">&nbsp;&nbsp;ANSI Common Lisp</a></li>
+                                    <li><a href="books_03.html">&nbsp;&nbsp;On Lisp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faq_general.html">Questions</a>
+                                <ul id="question_list">
+                                    <li><a href="faq_general.html">&nbsp;&nbsp;FAQs</a></li>
+                                    <li><a href="raq.html">&nbsp;&nbsp;RAQs</a></li>
+                                    <li><a href="ask.html">&nbsp;&nbsp;Ask Me</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quotes.html">Quotes</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                        </ul>
+                        <form id="minisearch" action="javascript:window.location.href='search_result.html'; return false;" method="post" autocomplete="off">
+                            <input type="image" id="minisubmit" src="images/search.png"  onclick="javascript:window.location.href='search_result.html'; return false;"/>
+                            <label for="minibar">Search a keyword: </label>
+                            <input type="minibar" id="minibar" name="minibar" placeholder="Search"/>  
+                        </form>  
+                        <div id="clearfloat"></div>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">                <!--main section-->
+                    <div id="threecolwrap">     <!--wrap all 3 columns-->
+                        <div id="twocolwrap">   <!--wrap left and main column to locate right column-->
+                            <div id="column_left">
+                                <ul id="sidenav">
+                                    <li class="mainsection"><a href="articles.html">&nbsp;Articles</a></li>
+                                    <li class="subsection"><a href="articles_arc.html">&nbsp;Arc</a></li>
+                                    <li class="subsection"><a href="articles_lisp.html" class="selected">&nbsp;Lisp</a></li>
+                                    <li class="subsection"><a href="articles_spam.html">&nbsp;Spam</a></li> 
+                                    <li class="subsection"><a href="articles_responses.html">&nbsp;Responses</a></li> 
+                                    <li class="subsection"><a href="articles_others.html">&nbsp;Other Essays</a></li> 
+                                </ul>
+                            </div>
+                            <div id="column_main">
+                                <section id="site_location">
+                                    <a href="index.html">PG</a> > <a href="articles.html">Articles</a> > <a href="articles_lisp.html">Lisp</a> > Article Details
+                                </section>
+                                <article class="passage">	
+                                    <h2>Lisp Quotes</h2>
+                                    <p>"Programs must be written for people to read, and only incidentally for machines to execute."<br/>- Abelson &amp; Sussman, SICP, preface to the first edition</p> 
+                                    <p>"That language is an instrument of human reason, and not merely a medium for the expression of thought, is a truth generally admitted."<br/>- George Boole, quoted in Iverson's Turing Award Lecture</p> 
+                                    <p>"the greatest single programming language ever designed"<br/>- Alan Kay, on Lisp</p> 
+                                    <p>"One of the most important and fascinating of all computer languages is Lisp (standing for "List Processing"), which was invented by John McCarthy around the time Algol was invented."<br/>- Douglas Hofstadter, Godel, Escher, Bach</p> 
+                                    <p>"Lisp is a programmable programming language."<br/>- John Foderaro, CACM, September 1991</p> 
+                                    <p>"One can even conjecture that Lisp owes its survival specifically to the fact that its programs are lists, which everyone, including me, has regarded as a disadvantage."<br/>- John McCarthy, "Early History of Lisp"</p> 
+                                    <p>"Lisp isn't a language, it's a building material."<br/>- Alan Kay</p> 
+                                    <p>"Greenspun's Tenth Rule of Programming: any sufficiently complicated C or Fortran program contains an ad hoc informally-specified bug-ridden slow implementation of half of Common Lisp."<br/>- Philip Greenspun</p> 
+                                    <p>"Including Common Lisp."<br/>- Robert Morris</p> 
+                                    <p>"Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot."<br/>- Eric Raymond, "How to Become a Hacker"</p> 
+                                    <p>"Some may say Ruby is a bad rip-off of Lisp or Smalltalk, and I admit that. But it is nicer to ordinary people."<br/>- Matz, LL2</p> 
+                                    <p>"We were not out to win over the Lisp programmers; we were after the C++ programmers. We managed to drag a lot of them about halfway to Lisp."<br/>- Guy Steele, Java spec co-author</p> 
+                                    <p>"Lisp has jokingly been called "the most intelligent way to misuse a computer". I think that description is a great compliment because it transmits the full flavor of liberation: it has assisted a number of our most gifted fellow humans in thinking previously impossible thoughts."<br/>- Edsger Dijkstra, CACM, 15:10 </p> 
+                                    <p>"Lisp is a programmer amplifier."<br/>- Martin Rodgers (first said by Chuck Moore about Forth)</p> 
+                                    <p>"Lisp ... made me aware that software could be close to executable mathematics."<br/>- L. Peter Deutsch</p> 
+                                    <p>"I object to doing things that computers can do."<br/>- Olin Shivers</p> 
+                                    <p>"Common Lisp, a happy amalgam of the features of previous Lisps"<br/>- Winston &amp; Horn, Lisp</p> 
+                                    <p>"Imprisoned in every fat man a thin man is wildly signaling to be let out."<br/>- Cyril Connolly</p> 
+                                    <p>"Common Lisp is politics, not art."<br/>- Scott Fahlman</p> 
+                                    <p>"Lisp was far more powerful and flexible than any other language of its day; in fact, it is still a better design than most languages of today, twenty-five years later. Lisp freed ITS's hackers to think in unusual and creative ways. It was a major factor in their successes, and remains one of hackerdom's favorite languages."<br/>- Eric Raymond, in Open Sources on MIT's first OS, ITS</p> 
+                                    <p>"Lisp doesn't look any deader than usual to me."<br/>- David Thornley, reply to a question older than most languages</p> 
+                                    <p>Most papers in computer science describe how their author learned what someone else already knew.<br/>- Peter Landin</p> 
+                                    <p>(This is a paraphrase. I'd appreciate it if anyone can tell me the exact quote.)</p> 
+                                    <p>"The only way to learn a new programming language is by writing programs in it."<br/>- Kernighan and Ritchie</p> 
+                                    <p>"If I had a nickel for every time I've written "for (i = 0; i &lt; N; i++)" in C I'd be a millionaire."<br/>- Mike Vanier</p> 
+                                    <p>"SQL, Lisp, and Haskell are the only programming languages that I've seen where one spends more time thinking than typing."<br/>- Philip Greenspun</p> 
+                                    <p>"Language designers are not intellectuals. They're not as interested in thinking as you might hope. They just want to get a language done and start using it."<br/>- Dave Moon</p> 
+                                    <p>"A man, a plan, a canoe, pasta, heros, rajahs, a coloratura, maps, snipe, percale, macaroni, a gag, a banana bag, a tan, a tag, a banana bag again (or a camel), a crepe, pins, Spam, a rut, a Rolo, cash, a jar, sore hats, a peon, a canal-- Panama!"<br/>- Guy Steele, CLTL2</p> 
+                                    <p>"The continuation that obeys only obvious stack semantics, O grasshopper, is not the true continuation."<br/>- Guy Steele</p> 
+                                    <p>"I have heard more than one LISP advocate state such subjective comments as, "LISP is the most powerful and elegant programming language in the world" and expect such comments to be taken as objective truth. I have never heard a Java, C++, C, Perl, or Python advocate make the same claim about their own language of choice."<br/>- A guy on Slashdot. What theory fits this data?</p> 
+                                    <p>"Although my own previous enthusiasm has been for syntactically rich languages, like the Algol family, I now see clearly and concretely the force of Minsky's 1970 Turing Lecture, in which he argued that Lisp's uniformity of structure and power of self reference gave the programmer capabilities whose content was well worth the sacrifice of visual form."<br/>- Robert Floyd, Turing Award Lecture, 1979</p> 
+                                    <p>"The key to performance is elegance, not battalions of special cases."<br/>- Jon Bentley and Doug McIlroy</p> 
+                                    <p>"Don't worry about what anybody else is going to do. The best way to predict the future is to invent it."<br/>- Alan Kay</p> 
+                                    <p>"I suppose I should learn Lisp, but it seems so foreign."<br/>- Paul Graham, Nov 1983</p> 
+                                </article>
+                                <section id="previous_article">
+                                    <p><a href="articles_lisp_003.html">&laquo; PREV: A Lisp Startup: Beating the Averages</a></p>
+                                </section>                
+                                <div id="clearfloat"></div>
+                            </div>
+                        </div>
+                        <div id="column_right">
+                            <div id="profile">
+                                <a href="biography.html"><img src="images/pg_profile.jpg" alt="Paul Graham Photo"></a>
+                                <h1>Paul Graham</h1>
+                                <div id="clearfloat"></div>
+                                <p>Programmer, writer, and investor</p>
+                            </div>
+                            <div id="twitter">
+                                <a class="twitter-timeline" href="https://twitter.com/paulg" data-widget-id="595850039504838656">Tweets by @paulg</a>       <!--twitter widget-->
+                            </div>
+                            <div id="link">
+                                <a href="http://www.ycombinator.com/"><img src="images/YC.png" alt="YCombinator link picture"></a>
+                                <a href="http://www.startupschool.org/"><img src="images/startup.png" alt="Startup School link picture"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clearfloat"></div>
+            </div>
+
+            <footer>
+                <div id="clearfloat"></div>
+                <div id="footer_left">
+                    <p>Twitter: <a href="http://twitter.com/paulg">@paulg</a></p>
+                    <p>E-mail: paulgraham@ycombinator.com</p> 
+                </div>
+                <div id="footer_right">
+                    <p>© 2015 mmxv pg</p>
+                    <p>Website Last Update: 12-06-2015</p>
+                </div>                
+            </footer>
+        </div>
+    </body>
+</html>
