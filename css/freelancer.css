@@ -509,6 +509,9 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h3{
   margin-top: 2em;
 }
+.portfolio-modal .modal-content caption{
+  margin-bottom: 1em;
+}
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
