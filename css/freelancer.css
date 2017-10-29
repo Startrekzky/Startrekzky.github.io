@@ -100,7 +100,7 @@ header .intro-text .skills {
 }
 
 .bounce img{
-  padding-top: 30px;
+  padding-top: 40px;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
