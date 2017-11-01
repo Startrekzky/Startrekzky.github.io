@@ -7,16 +7,25 @@
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top )
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
+        // if ($('#portfolio').scrollTop<0){
+        //     $('.navbar-custom').css('background','rgba(79, 79, 79, 0.4)');
+        //     console.log('1');
+        // }else{
+        //     $('.navbar-custom').css('background','rgba(79, 79, 79, 1)');
+        //     console.log('0.4');
+        // }
     });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 51
+        offset: 50
     });
+
+
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function(){ 

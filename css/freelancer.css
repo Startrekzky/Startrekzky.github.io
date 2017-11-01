@@ -69,7 +69,7 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: none;
-  color: #426689;
+  color: white;
 }
 header .container {
   padding-top: 100px;
@@ -82,7 +82,6 @@ header img {
 
 header .intro-text{
   padding-top: 150px;
-  color: white;
   z-index: 999;
 }
 /*header .intro-text .name {
@@ -157,11 +156,16 @@ header .intro-text .skills {
 }
 .navbar-custom {
   /*background: #EB7260;*/
-  background: #426689;
+  background: rgba(79, 79, 79,0.4);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+
+  transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out; /* FF 4 */
+    -webkit-transition: color 1s ease-in-out; /* Safari & Chrome */
+    -o-transition: color 1s ease-in-out; /* Opera */
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -186,8 +190,8 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #d0c4b4;
-  background: #426689;
+  color: #fc6767;
+  background: none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -195,7 +199,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #426689;
+  background: none;
   /*border-bottom: 2px solid currentColor;*/
   box-shadow:
     inset 0 -0.175em white,
@@ -249,12 +253,12 @@ section {
   padding: 100px 0;
 }
 section h2 {
-  margin: 0;
+  padding-bottom: 50px;
   font-size: 3em;
 }
 section.success {
-  background: #d0c4b4;
-  color: white;
+  background: #f4f4ef;
+  color: black;
 }
 @media (max-width: 767px) {
   section {
@@ -314,12 +318,12 @@ section.success {
 }
 
 #about {
-  margin-bottom: 120px;
+  margin-bottom: 90px;
   text-align: center;
 }
 
 #about h5{
-  color: #FFFFFF;
+  color: black;
   font-weight: 500;
 }
 
@@ -378,20 +382,16 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 footer {
-  
+  color: #d0c4b4;
 }
 footer h3 {
   margin-bottom: 30px;
-}
-footer .footer-above {
-  padding-top: 50px;
-  background-color: #2C3E50;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
-  padding: 25px 0;
+  padding-bottom: 25px;
   
 }
 .btn-outline {
@@ -408,7 +408,8 @@ footer .footer-below {
 .btn-outline.active {
   color: #d0c4b4;
   background: white;
-  border: solid 2px white;
+  border: solid 2px #d0c4b4;
+  transform: scale(1.1);
 }
 
 .list-inline .btn-outline{
