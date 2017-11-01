@@ -190,8 +190,13 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #fc6767;
+  /*color: #fc6767;*/
   background: none;
+  border: none;
+  transform: scale(1.1);
+  color: white;
+    -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -244,6 +249,9 @@ header .intro-text .skills {
 
   .navbar-custom.affix {
     padding: 10px 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: #F44336;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
@@ -410,6 +418,7 @@ footer .footer-below {
   background: white;
   border: solid 2px #d0c4b4;
   transform: scale(1.1);
+
 }
 
 .list-inline .btn-outline{
