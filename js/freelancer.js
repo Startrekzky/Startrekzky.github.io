@@ -25,8 +25,6 @@
         offset: 50
     });
 
-
-
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function(){ 
             $('.navbar-toggle:visible').click();
@@ -38,6 +36,42 @@
             top: 650
         }
     })
+
+
+    function randomIntFromInterval(min,max){
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
+
+    function typeWrite(span1, span2, callback){
+      //$('#'+span).addClass('cursor')
+      var text1 = $('#'+span1).text();
+      var text2 = $('#'+span2).text();
+      var randInt = 0;
+
+      for (var i = 0; i < text1.length; i++) {
+        randInt += parseInt(randomIntFromInterval(40,150));
+        var typing = setTimeout(function(y){
+          $('#'+span1).append(text1.charAt(y));
+        },randInt, i);
+      };
+      for (var i = 0; i < text2.length; i++) {
+        randInt += parseInt(randomIntFromInterval(40,150));
+        var typing = setTimeout(function(y){
+          $('#'+span2).append(text2.charAt(y));
+        },randInt, i);
+      };
+      setTimeout(callback,6000);
+    }
+
+    $(function(){
+      typeWrite("intro1","intro2", function(){
+        $(".bounce").animate({opacity:0.2}).animate({opacity:0.5})
+        .animate({opacity:0.8}).animate({opacity:1});
+      });
+      //console.log($(".bounce img"));
+      
+    });
+
 
     // Floating label headings for the contact form
     $(function() {
