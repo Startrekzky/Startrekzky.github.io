@@ -72,6 +72,21 @@
       
     });
 
+    //move skills labels before the progress bars
+
+    $($(window).resize(
+        function(){
+            if($(window).width() < 1183){
+                $(".skillLabel").each(function(index){
+                    $(this).insertBefore($(".skillBar:eq("+index+")"));
+                });
+            }else{
+                $(".skillLabel").each(function(index){
+                    $(this).insertAfter($(".skillBar:eq("+index+")"));
+                });
+            }
+        }
+    ).resize());
 
     // Floating label headings for the contact form
     $(function() {
